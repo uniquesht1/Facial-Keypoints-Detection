@@ -1,5 +1,3 @@
-import json
-
 configuration = {
     "batch_size": 16,
     "model_input_size": 224,
