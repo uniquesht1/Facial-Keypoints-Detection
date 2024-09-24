@@ -56,7 +56,7 @@ def main():
     model = get_model(device=device)
 
     # Define loss function and optimizer
-    criterion = nn.L1Loss()
+    criterion = nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=configuration.get('learning_rate'))
 
     # Train the model
