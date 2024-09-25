@@ -126,3 +126,12 @@ plt.imshow(img)
 img_tensor, _ = test_data[img_index]
 pred_keypoints = model(img_tensor[None]).flatten().detach().cpu()
 plt.scatter(pred_keypoints[:68] * model_input_size, pred_keypoints[68:] * model_input_size, c='y', s=2)
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to reach out if you encounter any issues or want to contribute!
